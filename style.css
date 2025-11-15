@@ -6,6 +6,7 @@ body {
 }
 .container {
   max-width: 500px;
+  width: 100%;
   margin: 40px auto 20px auto;
   background: #fff;
   border-radius: 8px;
@@ -67,9 +68,10 @@ footer a:hover {
 /* スマホ対応のためのレスポンシブ調整 */
 @media (max-width: 600px) {
   .container {
-    margin: 16px 4px 8px 4px;
-    padding: 16px 6px 12px 6px;
-    max-width: 98vw;
+    max-width: 100vw;
+    width: 98vw;
+    margin: 8px 1vw 8px 1vw;
+    padding: 12px 4vw 12px 4vw;
   }
   h1 {
     font-size: 1.3em;
