@@ -63,3 +63,42 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+/* スマホ対応のためのレスポンシブ調整 */
+@media (max-width: 600px) {
+  .container {
+    margin: 16px 4px 8px 4px;
+    padding: 16px 6px 12px 6px;
+    max-width: 98vw;
+  }
+  h1 {
+    font-size: 1.3em;
+  }
+  #quiz-section, #add-section {
+    margin-bottom: 16px;
+  }
+  input[type="text"] {
+    width: 98%;
+    font-size: 1em;
+  }
+  button {
+    width: 100%;
+    margin: 4px 0;
+    font-size: 1em;
+  }
+}
+
+/* 画面中央寄せ・高さ調整 */
+body, html {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+body {
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  margin-top: 8vh;
+  margin-bottom: 4vh;
+}
